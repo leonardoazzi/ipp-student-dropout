@@ -14,7 +14,8 @@ Crie um ambiente virtual para isolar os pacotes pip. Exemplo de criação de um 
 
 ```bash
 python3 -m venv env
-source env/bin/activate
+source env/bin/activate # On macOS/Linux
+.\venv\Scripts\activate # On Windows
 ```
 
 2. Instalação dos pacotes pip
