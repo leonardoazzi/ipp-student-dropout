@@ -1,6 +1,6 @@
 # Predição de evasão acadêmica no Instituto Politécnico de Portalegre 🇵🇹
 
-Este trabalho tem como objetivo desenvolver um modelo baseado em Aprendizado de Máquina para prever a evasão acadêmica dos estudantes, ou seja,  se o aluno irá desistir, ou permanecer matriculado e se formar. A predição antecipada da situação acadêmica permite que as instituições de ensino superior adotem medidas proativas para apoiar os estudantes em risco e aprimorar as políticas educacionais.
+Este trabalho tem como objetivo desenvolver um modelo baseado em Aprendizado de Máquina para prever a evasão acadêmica dos estudantes, ou seja, se o estudante irá evadir ou permanecer. Realizou-se uma Análise Exploratória dos Dados, visando identificar os padrões e anomalias do conjunto de dados criado pelo IPP. A partir desta análisa, realizou-se um Spot-checking de algoritmos, selecionando três pipelines para otimização de hiperparâmetros e avaliação final. O melhor modelo apresentado utiliza o algoritmo AdaBoost, criado com uma pipeline de modelagem que pré-processa os dados e utiliza os melhores hiperparâmetros. A predição da situação acadêmica permite que as instituições de ensino superior adotem medidas proativas para apoiar os estudantes em risco e aprimorar as políticas educacionais.
 
 ![image](./IPP-Portalegre.jpg)
 
@@ -14,18 +14,13 @@ Crie um ambiente virtual para isolar os pacotes pip. Exemplo de criação de um 
 
 ```bash
 python3 -m venv env
-source env/bin/activate
+source env/bin/activate # On macOS/Linux
+.\venv\Scripts\activate # On Windows
 ```
 
-2. Instalação dos pacotes pip
-   
-```bash
-pip install -r requirements.txt
-```
+2. Carregamento dos dados
 
-3. Carregamento dos dados
-
-O carregamento dos dados está sendo feito no EDA.ipynb através de cURL. Adapte os caminhos para outros sistemas operacionais.
+O carregamento dos dados está sendo feito nos notebooks para sistemas Unix-like. Adapte manualmente os caminhos para outros sistemas operacionais.
 
 - Linux:
 
